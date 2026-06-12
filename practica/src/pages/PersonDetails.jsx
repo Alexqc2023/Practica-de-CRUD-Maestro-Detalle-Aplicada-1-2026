@@ -19,7 +19,9 @@ function PersonDetails() {
   const { id } = useParams();
 
   const [person, setPerson] = useState(null);
+
   const [socialNetworks, setSocialNetworks] = useState([]);
+  
   const [addresses, setAddresses] = useState([]); 
   const [editingId, setEditingId] = useState(null);
   const [editingAddressId, setEditingAddressId] = useState(null); 

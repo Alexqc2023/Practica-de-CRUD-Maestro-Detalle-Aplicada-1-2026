@@ -16,6 +16,11 @@ function Navbar() {
           <Link className="btn btn-outline-light" to="/personas">
             Personas
           </Link>
+
+          <Link className="btn btn-outline-light" to="/direction">
+            Direccion
+          </Link>
+
         </div>
       </div>
     </nav>

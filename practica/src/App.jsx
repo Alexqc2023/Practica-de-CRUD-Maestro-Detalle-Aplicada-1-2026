@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import People from './pages/People';
 import PersonDetails from './pages/PersonDetails';
 
+import Direccion from './pages/Direccion'; 
+
 function App() {
   return (
     <BrowserRouter>
@@ -11,8 +13,12 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        
         <Route path="/personas" element={<People />} />
+
         <Route path="/personas/:id" element={<PersonDetails />} />
+        
+        <Route path="/direction" element={<Direccion />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,4 +1,13 @@
 import { supabase } from '../supabase/supabaseClient';
+export async function getAddresses() {
+  const { data, error } = await supabase
+    .from('addresses')
+    .select('*')
+    .order('id', { ascending: false });
+
+  if (error) throw error;
+  return data;
+}
 
 export async function getAddressesByPersonId(personId) {
   const { data, error } = await supabase
